@@ -1,7 +1,15 @@
 
 # SessionLens - Knowledge Transfer
 
-## Wot is This Thing?
+## Running the App
+
+1.  `npm install`
+2.  `npm run dev` (Usually runs on `http://localhost:9002`)
+
+Uses mock data from `src/lib/session-data.ts`.
+Disconnects are inferred if a participant's log ends before the session.
+
+## What is this Thing?
 
 SessionLens is a little app to show a timeline of what happened in a video/audio call. You feed it some JSON data (see `src/lib/session-data.ts` for the format), and it draws out who was in the call, when they joined, when their mic or video was on, and if any errors or disconnects happened.
 
