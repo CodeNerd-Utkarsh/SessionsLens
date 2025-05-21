@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+@layer base {
+  :root {
+    --background: 210 20% 96.1%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 205 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 90%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 15% 90%;
+    --muted-foreground: 222 20% 40%;
+
+    --accent: 205 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 10% 85%;
+    --input: 210 10% 85%;
+    --ring: 205 85% 55%;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --radius: 0.5rem;
+
+    --event-mic-on: 135 65% 50%;
+    --event-mic-icon-bg: 200 90% 60%;
+    --event-mic-icon-foreground: 0 0% 100%;
+    --event-error: 38 90% 55%;
+    --event-disconnect: 0 72% 51%;
+    --participant-presence: 210 10% 80%;
+    --timeline-grid: 210 10% 90%;
+    --participant-track-bg: 210 15% 94%;
+
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 210 20% 90%;
+
+    --card: 220 15% 12%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 205 85% 55%;
+    --primary-foreground: 210 20% 95%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 10% 30%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 205 80% 50%;
+    --accent-foreground: 210 20% 95%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 20%;
+    --ring: 205 85% 60%;
+
+    --event-mic-on: 135 65% 50%;
+    --event-mic-icon-bg: 200 80% 55%;
+    --event-mic-icon-foreground: 0 0% 100%;
+    --event-error: 38 90% 55%;
+    --event-disconnect: 0 75% 60%;
+    --participant-presence: 220 15% 40%;
+    --timeline-grid: 220 10% 35%;
+    --participant-track-bg: 220 15% 10%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
